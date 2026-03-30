@@ -25,9 +25,15 @@
 html.theme-b {
   --color-ink:   17 24 39;      /* #111827 — near-black, barely cool  */
   --color-cream: 249 250 251;   /* #f9fafb — near-white, essentially neutral */
-  --color-amber: 37 99 235;     /* #2563eb — strong, clear blue accent */
+  --color-amber: 37 99 235;     /* #2563eb — strong blue accent for light backgrounds */
   --color-sand:  241 245 249;   /* #f1f5f9 — very light grey, minimal tint */
   --color-mid:   100 116 139;   /* #64748b — cool slate grey            */
+}
+
+/* Contextual override: when using the blue theme, use a lighter, luminous sky-blue 
+   on dark backgrounds so the contrast pops dramatically. */
+html.theme-b .bg-ink {
+  --color-amber: 14 165 233;    /* #0ea5e9 — bright sky blue for dark bg */
 }
 
 /* Smooth anchor scrolling */
