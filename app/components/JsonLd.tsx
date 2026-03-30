@@ -12,7 +12,6 @@ export default function JsonLd() {
     description:
       'Expert personal training, sports massage, and GP referral fitness services in Winnersh, Wokingham, and Reading. 20+ years experience.',
     url: 'https://perryhowardpt.co.uk',
-    telephone: '+447846329663',
     email: 'advancedfitnesstraining@hotmail.co.uk',
     image: 'https://perryhowardpt.co.uk/images/Perry.png',
     priceRange: '££',

@@ -1,7 +1,7 @@
 // ─── FOOTER ────────────────────────────────────────────────────────────────
 // Dark ink background. Thin amber rule at top. Brand left, Instagram right.
 
-import { FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaInstagram, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -42,13 +42,6 @@ export default function Footer() {
                 Grovelands Ave, Winnersh<br />
                 Wokingham RG41 5LB
               </span>
-            </a>
-            <a
-              href="tel:07846329663"
-              className="flex items-center gap-3 text-mid hover:text-cream transition-colors group"
-            >
-              <FaPhone className="text-sm group-hover:text-amber transition-colors" />
-              <span className="font-plex text-xs tracking-widest">07846 329663</span>
             </a>
             <a
               href="mailto:advancedfitnesstraining@hotmail.co.uk"

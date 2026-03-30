@@ -62,18 +62,20 @@ export default function ContactPage() {
               {/* Direct contact details */}
               <div className="flex flex-col gap-4 mb-12">
                 <a
-                  href="tel:07846329663"
-                  className="flex items-center gap-3 text-mid hover:text-ink transition-colors group"
-                >
-                  <span className="label text-amber group-hover:opacity-70 transition-opacity">T</span>
-                  <span className="font-dm text-sm font-light">07846 329663</span>
-                </a>
-                <a
                   href="mailto:advancedfitnesstraining@hotmail.co.uk"
                   className="flex items-center gap-3 text-mid hover:text-ink transition-colors group"
                 >
                   <span className="label text-amber group-hover:opacity-70 transition-opacity">E</span>
                   <span className="font-dm text-sm font-light break-all">advancedfitnesstraining@hotmail.co.uk</span>
+                </a>
+                <a
+                  href="https://www.instagram.com/perryhowardpt/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-mid hover:text-ink transition-colors group"
+                >
+                  <span className="label text-amber group-hover:opacity-70 transition-opacity">IG</span>
+                  <span className="font-dm text-sm font-light">@perryhowardpt</span>
                 </a>
               </div>
 
@@ -130,20 +132,6 @@ export default function ContactPage() {
                     <input
                       type="email" id="email" name="email" required
                       placeholder="e.g. sarah@example.com"
-                      className="w-full bg-transparent font-dm text-ink text-base font-light placeholder:text-mid placeholder:opacity-50 focus:outline-none py-2 border-b border-sand focus:border-amber transition-colors duration-150"
-                    />
-                  </div>
-
-                  {/* ── Phone (optional) ── */}
-                  <div className="py-6">
-                    {/* EDIT THIS TEXT: Phone field label */}
-                    <label htmlFor="phone" className="label text-mid block mb-3">
-                      Phone{' '}
-                      <span className="font-dm font-light normal-case text-xs text-mid opacity-60">(optional)</span>
-                    </label>
-                    <input
-                      type="tel" id="phone" name="phone"
-                      placeholder="e.g. 07700 900000"
                       className="w-full bg-transparent font-dm text-ink text-base font-light placeholder:text-mid placeholder:opacity-50 focus:outline-none py-2 border-b border-sand focus:border-amber transition-colors duration-150"
                     />
                   </div>

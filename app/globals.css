@@ -2,38 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── COLOUR PALETTES ───────────────────────────────────────────────────────
-   Warm (default) and Blue themes driven by CSS custom properties.
-   ThemeSwitcher toggles the html.theme-b class to swap palettes.
+/* ── COLOUR PALETTE ────────────────────────────────────────────────────────
+   Warm amber/cream — Perry's chosen palette.
+   Values are space-separated RGB channels so Tailwind opacity modifiers work:
+   e.g. bg-ink/75 → rgb(var(--color-ink) / 0.75)
    ───────────────────────────────────────────────────────────────────────── */
 
-/* Warm palette — amber/cream (default)
-   Values are space-separated RGB channels so Tailwind opacity modifiers work:
-   e.g. bg-ink/75 → rgb(var(--color-ink) / 0.75)                            */
 :root {
   --color-ink:   26 25 22;      /* #1A1916 */
   --color-cream: 244 239 230;   /* #F4EFE6 */
   --color-amber: 184 121 60;    /* #B8793C */
   --color-sand:  232 221 208;   /* #E8DDD0 */
   --color-mid:   138 132 120;   /* #8A8478 */
-}
-
-/* Blue palette — strong blue accent on near-neutral base
-   Rule: only the accent (amber→blue) carries the hue.
-   Everything else stays near-neutral so sections read as
-   dark / light / secondary — not "blue everywhere".        */
-html.theme-b {
-  --color-ink:   17 24 39;      /* #111827 — near-black, barely cool  */
-  --color-cream: 249 250 251;   /* #f9fafb — near-white, essentially neutral */
-  --color-amber: 37 99 235;     /* #2563eb — strong blue accent for light backgrounds */
-  --color-sand:  241 245 249;   /* #f1f5f9 — very light grey, minimal tint */
-  --color-mid:   100 116 139;   /* #64748b — cool slate grey            */
-}
-
-/* Contextual override: when using the blue theme, use a lighter, luminous sky-blue 
-   on dark backgrounds so the contrast pops dramatically. */
-html.theme-b .bg-ink {
-  --color-amber: 14 165 233;    /* #0ea5e9 — bright sky blue for dark bg */
 }
 
 /* Smooth anchor scrolling */

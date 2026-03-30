@@ -7,7 +7,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import ThemeSwitcher from './ThemeSwitcher'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -32,8 +31,6 @@ export default function Navbar() {
           <a href="/#services" className="label text-mid hover:text-ink transition-colors">Services</a>
           <a href="/#process"  className="label text-mid hover:text-ink transition-colors">Process</a>
           <Link href="/about"  className="label text-mid hover:text-ink transition-colors">My Story</Link>
-          {/* Demo colour switcher — remove before final launch */}
-          <ThemeSwitcher />
           {/* EDIT THIS TEXT: Navbar CTA button */}
           <a
             href="/contact"
@@ -71,11 +68,6 @@ export default function Navbar() {
           <a href="/#process"  onClick={() => setMenuOpen(false)} className="label text-mid hover:text-ink">Process</a>
           <Link href="/about"  onClick={() => setMenuOpen(false)} className="label text-mid hover:text-ink">My Story</Link>
           <a href="/contact"   onClick={() => setMenuOpen(false)} className="label text-ink border border-ink px-5 py-3 text-center hover:bg-ink hover:text-cream transition-colors">Book Now</a>
-          {/* Demo colour switcher — remove before final launch */}
-          <div className="pt-2 flex items-center gap-3">
-            <span className="label text-mid">Colour theme:</span>
-            <ThemeSwitcher />
-          </div>
         </div>
       )}
     </nav>

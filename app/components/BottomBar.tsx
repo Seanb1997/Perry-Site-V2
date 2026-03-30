@@ -4,7 +4,7 @@
 // Fixed call-to-action bar — visible on mobile only (hidden on md+).
 // Left: call Perry. Right: book a free call (amber CTA).
 
-import { FaPhone } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa'
 import { usePathname } from 'next/navigation'
 
 export default function BottomBar() {
@@ -20,13 +20,13 @@ export default function BottomBar() {
     >
       <div className="flex h-14 border-t border-white/10">
 
-        {/* Left: call */}
+        {/* Left: email */}
         <a
-          href="tel:07846329663"
+          href="mailto:advancedfitnesstraining@hotmail.co.uk"
           className="flex flex-1 items-center justify-center gap-2 bg-ink border-r border-white/10 hover:bg-white/5 transition-colors"
         >
-          <FaPhone className="text-amber text-xs" />
-          <span className="label text-cream" style={{ fontSize: '0.62rem' }}>Call Perry</span>
+          <FaEnvelope className="text-amber text-xs" />
+          <span className="label text-cream" style={{ fontSize: '0.62rem' }}>Email Perry</span>
         </a>
 
         {/* Right: book — amber */}
@@ -34,7 +34,7 @@ export default function BottomBar() {
           href="/contact"
           className="flex flex-1 items-center justify-center bg-amber hover:opacity-90 transition-opacity"
         >
-          <span className="label text-ink" style={{ fontSize: '0.62rem' }}>Book a Free Call</span>
+          <span className="label text-ink" style={{ fontSize: '0.62rem' }}>Get in Touch</span>
         </a>
 
       </div>
