@@ -14,7 +14,7 @@ export default function JsonLd() {
     url: 'https://perryhowardpt.co.uk',
     telephone: '+447846329663',
     email: 'advancedfitnesstraining@hotmail.co.uk',
-    image: 'https://perryhowardpt.co.uk/images/Perry.jpeg',
+    image: 'https://perryhowardpt.co.uk/images/Perry.png',
     priceRange: '££',
     address: {
       '@type': 'PostalAddress',

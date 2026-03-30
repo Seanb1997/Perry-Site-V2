@@ -2,7 +2,7 @@
 // Split layout: text left, Perry's portrait right (desktop).
 // Mobile: portrait fills the section as a background with dark overlay.
 //
-// PHOTO: /public/images/Perry.jpeg
+// PHOTO: /public/images/Perry.png
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
       {/* ── MOBILE: Full-bleed background photo with dark overlay ─────────── */}
       <div
         className="absolute inset-0 bg-cover bg-top lg:hidden"
-        style={{ backgroundImage: "url('/images/Perry.jpeg')" }}
+        style={{ backgroundImage: "url('/images/Perry.png')" }}
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-ink/75 lg:hidden" aria-hidden="true" />
@@ -72,7 +72,7 @@ export default function Hero() {
       {/* ── RIGHT: PERRY'S PORTRAIT — desktop only ───────────────────────── */}
       <div
         className="hidden lg:block relative lg:h-auto lg:w-[44%] flex-shrink-0 bg-ink bg-cover bg-top"
-        style={{ backgroundImage: "url('/images/Perry.jpeg')" }}
+        style={{ backgroundImage: "url('/images/Perry.png')" }}
       >
         {/* Amber corner frames */}
         <div className="absolute top-0 right-0 w-px h-20 bg-amber" />

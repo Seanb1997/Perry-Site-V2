@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       'Expert personal training in Winnersh, Wokingham & Reading. Strength, sports massage, GP referral & online coaching. 20+ years experience.',
     images: [
       {
-        url: '/images/Perry.jpeg',
+        url: '/images/Perry.png',
         width: 1200,
         height: 630,
         alt: 'Perry Howard — Personal Trainer in Winnersh, Wokingham',
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     title: 'Perry Howard PT | Personal Trainer in Winnersh & Wokingham',
     description:
       'Expert personal training in Winnersh, Wokingham & Reading. Strength, sports massage, GP referral & online coaching. 20+ years experience.',
-    images: ['/images/Perry.jpeg'],
+    images: ['/images/Perry.png'],
   },
 
   alternates: {

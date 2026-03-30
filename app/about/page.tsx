@@ -21,7 +21,7 @@ export default function AboutPage() {
 
       {/* ── 1. HERO BANNER ───────────────────────────────────────────── */}
       {/*
-          PHOTO: Uses /public/images/Perry.jpeg — the same portrait as the homepage.
+          PHOTO: Uses /public/images/Perry.png — the same portrait as the homepage.
           Mobile: full-bleed background with dark overlay.
           Desktop (lg+): split layout — text left, portrait panel right.
       */}
@@ -30,7 +30,7 @@ export default function AboutPage() {
         {/* Mobile: full-bleed background photo with dark overlay */}
         <div
           className="absolute inset-0 bg-cover bg-top lg:hidden"
-          style={{ backgroundImage: "url('/images/Perry.jpeg')" }}
+          style={{ backgroundImage: "url('/images/Perry.png')" }}
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-ink/75 lg:hidden" aria-hidden="true" />
@@ -58,7 +58,7 @@ export default function AboutPage() {
           {/* Right: Perry's portrait — desktop only */}
           <div
             className="hidden lg:block relative lg:h-auto lg:w-[44%] flex-shrink-0 bg-ink bg-cover bg-top"
-            style={{ backgroundImage: "url('/images/Perry.jpeg')" }}
+            style={{ backgroundImage: "url('/images/Perry.png')" }}
           >
             {/* Bottom vignette */}
             <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink/40 to-transparent" />
