@@ -12,7 +12,8 @@
       "mcp__plugin_playwright_playwright__browser_install",
       "Bash(git -C \"C:/Users/Sean/Perry Howard Site\" init)",
       "Bash(git -C \"C:/Users/Sean/Perry Howard Site\" add .)",
-      "Bash(git -C \"C:/Users/Sean/Perry Howard Site\" commit -m \"Initial commit — Perry Howard PT site with theme switcher\")"
+      "Bash(git -C \"C:/Users/Sean/Perry Howard Site\" commit -m \"Initial commit — Perry Howard PT site with theme switcher\")",
+      "Bash(npm install:*)"
     ]
   }
 }
