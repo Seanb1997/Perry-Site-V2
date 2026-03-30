@@ -8,7 +8,7 @@
 import { useRef, useState, useEffect, RefObject } from 'react'
 
 export function useCarouselIndex(numCards: number): {
-  scrollRef: RefObject<HTMLDivElement>
+  scrollRef: RefObject<HTMLDivElement | null>
   activeIndex: number
 } {
   const scrollRef = useRef<HTMLDivElement>(null)
