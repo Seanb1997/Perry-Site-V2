@@ -22,8 +22,8 @@ export default function HomePage() {
       <Process />
       <Credentials />
       <Testimonials />
-      <InstagramFeed />
       <CTA />
+      <InstagramFeed />
       <Footer />
     </>
   )
