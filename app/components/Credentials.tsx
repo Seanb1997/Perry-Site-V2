@@ -42,7 +42,6 @@ export default function Credentials() {
             <p className="label text-amber mb-6">Qualifications</p>
             <h2 className="font-cormorant font-light text-cream leading-tight mb-8"
                 style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)' }}>
-              Six qualifications.<br />
               Twenty years of<br />
               getting it right.
             </h2>

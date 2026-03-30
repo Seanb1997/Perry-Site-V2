@@ -39,8 +39,7 @@ export default function Hero() {
         {/* EDIT THIS TEXT: Hero subheadline */}
         <p className="font-dm text-sand font-light text-base md:text-lg leading-relaxed max-w-sm mb-8 lg:mb-12">
           Personal training in Winnersh, Wokingham &amp; Reading (RG41).<br />
-          Strength coaching, sports massage, and GP referral fitness.<br />
-          Train with the coach who trains the coaches — 20+ years experience.
+          Train with the coach who trains the coaches — 20+ years experience as a personal trainer, fitness lecturer and external verifier for fitness training providers.
         </p>
 
         {/* EDIT THIS TEXT: Hero CTA button */}
@@ -53,7 +52,7 @@ export default function Hero() {
 
         {/* Trust line beneath CTA */}
         <p className="font-dm text-mid text-xs font-light mt-4 opacity-70">
-          20+ years experience · L4 Sports Massage · GP Referral Qualified
+          20+ years experience as a personal trainer, fitness lecturer and external verifier
         </p>
 
         {/* Decorative large number — barely visible watermark */}

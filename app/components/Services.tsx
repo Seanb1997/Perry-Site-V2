@@ -38,7 +38,6 @@ export default function Services() {
                     <h3 className="font-cormorant text-xl md:text-2xl font-medium text-cream">
                       1-to-1 Personal Training
                     </h3>
-                    <span className="font-plex text-xs text-amber opacity-60 flex-shrink-0">£60 / session</span>
                   </div>
                   <p className="font-dm text-mid text-sm leading-relaxed font-light mb-4">
                     Strength, performance, and long-term health — built around how your body
@@ -52,45 +51,20 @@ export default function Services() {
               </div>
             </div>
 
-            {/* ─── SERVICE 2 — Online Training ──────────────────────── */}
+            {/* ─── SERVICE 2 — Independent 6-Week Plan ──────────────── */}
             <div className="py-5 md:py-8 border-b border-white border-opacity-10">
               <div className="flex items-start gap-6">
                 <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">02</span>
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4 mb-2">
                     <h3 className="font-cormorant text-xl md:text-2xl font-medium text-cream">
-                      Online Training Packages
-                    </h3>
-                  </div>
-                  <p className="font-dm text-mid text-sm leading-relaxed font-light mb-4">
-                    Expert programming delivered remotely — structured around your schedule,
-                    environment, and goals. Includes face-to-face fitness testing sessions so
-                    your plan is always grounded in real assessment data. Pricing varies by
-                    package — get in touch for details.
-                  </p>
-                  <a href="/contact" className="label text-amber hover:opacity-70 transition-opacity">
-                    Find out more →
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* ─── SERVICE 3 — Independent 6-Week Plan ──────────────── */}
-            <div className="py-5 md:py-8 border-b border-white border-opacity-10">
-              <div className="flex items-start gap-6">
-                <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">03</span>
-                <div className="flex-1">
-                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4 mb-2">
-                    <h3 className="font-cormorant text-xl md:text-2xl font-medium text-cream">
                       Independent 6-Week Plans
                     </h3>
-                    <span className="font-plex text-xs text-amber opacity-60 flex-shrink-0">£100 / plan</span>
                   </div>
                   <p className="font-dm text-mid text-sm leading-relaxed font-light mb-4">
                     A fully structured six-week training block — designed for you to complete
                     independently, in your own time and space. Expert programming without the
                     ongoing commitment of 1-to-1 sessions, with a review and re-test at week six.
-                    PT sessions can be added at £60 each.
                   </p>
                   <a href="/contact" className="label text-amber hover:opacity-70 transition-opacity">
                     Find out more →
@@ -99,10 +73,10 @@ export default function Services() {
               </div>
             </div>
 
-            {/* ─── SERVICE 4 — Postural Assessment ─────────────────── */}
+            {/* ─── SERVICE 3 — Postural Assessment ─────────────────── */}
             <div className="py-5 md:py-8 border-b border-white border-opacity-10">
               <div className="flex items-start gap-6">
-                <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">04</span>
+                <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">03</span>
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4 mb-2">
                     <h3 className="font-cormorant text-xl md:text-2xl font-medium text-cream">
@@ -121,10 +95,10 @@ export default function Services() {
               </div>
             </div>
 
-            {/* ─── SERVICE 5 — Sports Massage ───────────────────────── */}
+            {/* ─── SERVICE 4 — Sports Massage ───────────────────────── */}
             <div className="py-5 md:py-8 border-b border-white border-opacity-10">
               <div className="flex items-start gap-6">
-                <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">05</span>
+                <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">04</span>
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4 mb-2">
                     <h3 className="font-cormorant text-xl md:text-2xl font-medium text-cream">
@@ -143,10 +117,10 @@ export default function Services() {
               </div>
             </div>
 
-            {/* ─── SERVICE 6 — PT Mentorship ────────────────────────── */}
+            {/* ─── SERVICE 5 — PT Mentorship ────────────────────────── */}
             <div className="py-5 md:py-8 border-b border-white border-opacity-10">
               <div className="flex items-start gap-6">
-                <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">06</span>
+                <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">05</span>
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4 mb-2">
                     <h3 className="font-cormorant text-xl md:text-2xl font-medium text-cream">
@@ -166,10 +140,10 @@ export default function Services() {
               </div>
             </div>
 
-            {/* ─── SERVICE 7 — CPD Workshops ────────────────────────── */}
+            {/* ─── SERVICE 6 — CPD Workshops ────────────────────────── */}
             <div className="py-5 md:py-8">
               <div className="flex items-start gap-6">
-                <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">07</span>
+                <span className="font-plex text-xs text-amber opacity-50 mt-0.5 flex-shrink-0 w-6">06</span>
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4 mb-2">
                     <h3 className="font-cormorant text-xl md:text-2xl font-medium text-cream">
