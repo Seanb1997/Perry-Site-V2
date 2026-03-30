@@ -1,10 +1,17 @@
+'use client'
+
 // ─── TESTIMONIALS SECTION ──────────────────────────────────────────────────
 // Magazine-style layout: one large featured pull-quote at top,
 // two smaller testimonials side-by-side below. No equal cards.
+// Dot indicator tracks active card as user swipes on mobile.
 //
 // !! Replace all three placeholder quotes with real client testimonials !!
 
+import { useCarouselIndex } from '../hooks/useCarouselIndex'
+
 export default function Testimonials() {
+  const { scrollRef, activeIndex } = useCarouselIndex(2)
+
   return (
     <section className="bg-sand py-14 md:py-24 px-8 md:px-16">
       <div className="max-w-7xl mx-auto">
@@ -49,7 +56,7 @@ export default function Testimonials() {
         <div className="h-px bg-sand mb-16" style={{ backgroundColor: '#cfc4b3' }} />
 
         {/* ── TWO SMALLER TESTIMONIALS — carousel on mobile, grid on desktop ── */}
-        <div className="-mx-8 md:mx-0 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide">
+        <div ref={scrollRef} className="-mx-8 md:mx-0 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide">
           <div className="flex md:grid md:grid-cols-2 w-max md:w-auto md:gap-16">
 
             {/* ─── TESTIMONIAL 2 ── */}
@@ -101,12 +108,18 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Swipe hint — mobile only */}
+        {/* Swipe hint — mobile only, dots track active card */}
         <div className="flex items-center gap-3 mt-5 md:hidden">
-          <div className="w-3 h-3 rounded-full bg-amber" />
-          <div className="w-3 h-3 rounded-full bg-mid opacity-30" />
-          <span className="label text-mid opacity-60 ml-1">swipe for more</span>
+          {[0, 1].map(i => (
+            <div key={i} className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              i === activeIndex ? 'bg-amber opacity-100' : 'bg-mid opacity-30'
+            }`} />
+          ))}
+          {activeIndex === 0 && (
+            <span className="label text-mid opacity-60 ml-1">swipe for more</span>
+          )}
         </div>
+
       </div>
     </section>
   )

@@ -1,7 +1,14 @@
+'use client'
+
 // ─── PROCESS SECTION ───────────────────────────────────────────────────────
 // Three steps. Desktop: 3-col grid. Mobile: horizontal snap-scroll carousel.
+// Dot indicator tracks active card as user swipes.
+
+import { useCarouselIndex } from '../hooks/useCarouselIndex'
 
 export default function Process() {
+  const { scrollRef, activeIndex } = useCarouselIndex(3)
+
   return (
     <section id="process" className="bg-cream py-14 md:py-24 px-8 md:px-16">
       <div className="max-w-7xl mx-auto">
@@ -19,7 +26,7 @@ export default function Process() {
         <div className="h-px bg-sand" />
 
         {/* Steps — horizontal scroll on mobile, 3-col grid on md+ */}
-        <div className="-mx-8 md:mx-0 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide">
+        <div ref={scrollRef} className="-mx-8 md:mx-0 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide">
           <div className="flex md:grid md:grid-cols-3 w-max md:w-auto">
 
             {/* ─── STEP 01 ──────────────────────────────────────────────── */}
@@ -74,12 +81,16 @@ export default function Process() {
           </div>
         </div>
 
-        {/* Swipe hint — mobile only */}
+        {/* Swipe hint — mobile only, dots track active card */}
         <div className="flex items-center gap-3 mt-4 md:hidden">
-          <div className="w-3 h-3 rounded-full bg-amber" />
-          <div className="w-3 h-3 rounded-full bg-mid opacity-30" />
-          <div className="w-3 h-3 rounded-full bg-mid opacity-30" />
-          <span className="label text-mid opacity-60 ml-1">swipe for more</span>
+          {[0, 1, 2].map(i => (
+            <div key={i} className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              i === activeIndex ? 'bg-amber opacity-100' : 'bg-mid opacity-30'
+            }`} />
+          ))}
+          {activeIndex === 0 && (
+            <span className="label text-mid opacity-60 ml-1">swipe for more</span>
+          )}
         </div>
 
         {/* Bottom rule */}
