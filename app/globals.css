@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── COLOUR PALETTES ───────────────────────────────────────────────────────
+   Warm (default) and Blue themes driven by CSS custom properties.
+   ThemeSwitcher toggles the html.theme-b class to swap palettes.
+   ───────────────────────────────────────────────────────────────────────── */
+
+/* Warm palette — amber/cream (default)
+   Values are space-separated RGB channels so Tailwind opacity modifiers work:
+   e.g. bg-ink/75 → rgb(var(--color-ink) / 0.75)                            */
+:root {
+  --color-ink:   26 25 22;      /* #1A1916 */
+  --color-cream: 244 239 230;   /* #F4EFE6 */
+  --color-amber: 184 121 60;    /* #B8793C */
+  --color-sand:  232 221 208;   /* #E8DDD0 */
+  --color-mid:   138 132 120;   /* #8A8478 */
+}
+
+/* Blue palette — strong blue accent on near-neutral base
+   Rule: only the accent (amber→blue) carries the hue.
+   Everything else stays near-neutral so sections read as
+   dark / light / secondary — not "blue everywhere".        */
+html.theme-b {
+  --color-ink:   17 24 39;      /* #111827 — near-black, barely cool  */
+  --color-cream: 249 250 251;   /* #f9fafb — near-white, essentially neutral */
+  --color-amber: 37 99 235;     /* #2563eb — strong, clear blue accent */
+  --color-sand:  241 245 249;   /* #f1f5f9 — very light grey, minimal tint */
+  --color-mid:   100 116 139;   /* #64748b — cool slate grey            */
+}
+
+/* Smooth anchor scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for carousel components */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Base type and background */
+body {
+  font-family: var(--font-dm), system-ui, sans-serif;
+  background-color: rgb(var(--color-cream));
+  color: rgb(var(--color-ink));
+}
+
+/* ── GRAIN TEXTURE ─────────────────────────────────────────────────────────
+   Fixed overlay adds a subtle paper/film grain over the whole site.
+   Increases warmth of the cream background. Opacity is very low — you
+   probably won't notice it until it's removed.
+   ───────────────────────────────────────────────────────────────────────── */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.028;
+}
+
+/* ── LABEL UTILITY ─────────────────────────────────────────────────────────
+   Used for section overlines, metadata, and small category labels.
+   Usage: className="label text-mid"
+   ───────────────────────────────────────────────────────────────────────── */
+@layer utilities {
+  .label {
+    font-family: var(--font-plex), 'Courier New', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+}

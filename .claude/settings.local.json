@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:eliteedgefitness.co.uk)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_install",
+      "Bash(git -C \"C:/Users/Sean/Perry Howard Site\" init)",
+      "Bash(git -C \"C:/Users/Sean/Perry Howard Site\" add .)",
+      "Bash(git -C \"C:/Users/Sean/Perry Howard Site\" commit -m \"Initial commit — Perry Howard PT site with theme switcher\")"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+[    1554ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico:0
+[    2455ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
+[    2455ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
+[    2526ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
+[    2455ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
+[    2526ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
+[    3078ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
+[    2455ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
+[    2526ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
+[    3078ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
+[   12692ms] [ERROR] Refused to display 'https://www.instagram.com/' in a frame because it set 'X-Frame-Options' to 'deny'. @ chrome-error://chromewebdata/:0
