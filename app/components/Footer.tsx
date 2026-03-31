@@ -63,12 +63,21 @@ export default function Footer() {
 
         </div>
 
-        {/* Copyright */}
-        <div className="border-t pt-6" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
+        {/* Copyright + Agency credit */}
+        <div className="border-t pt-6 flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-center" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
           {/* EDIT THIS TEXT: Copyright line */}
           <p className="font-plex text-xs tracking-widest" style={{ color: 'rgba(138,132,120,0.5)' }}>
             © 2026 Perry Howard PT. All rights reserved.
           </p>
+          <a
+            href="https://seanbakerstudio.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-plex text-xs tracking-widest hover:opacity-75 transition-opacity"
+            style={{ color: 'rgba(138,132,120,0.5)' }}
+          >
+            Site by Sean Baker Studio
+          </a>
         </div>
 
       </div>
